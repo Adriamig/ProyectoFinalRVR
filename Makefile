@@ -7,12 +7,13 @@ LIBS=-lpthread
 %.o: %.cc $(DEPS)
 	$(CC) -g -c -o $@ $< $(CFLAGS)
 
-all: cs cc
+all: bin/cs bin/cc
 
-cs: $(OBJ) ChatServer.o
+
+bin/cs: $(OBJ) ChatServer.o
 	g++ -o $@ $^ $(CFLAGS) $(LIBS)
 
-cc: $(OBJ) ChatClient.o
+bin/cc: $(OBJ) ChatClient.o
 	g++ -o $@ $^ $(CFLAGS) $(LIBS)
 
 

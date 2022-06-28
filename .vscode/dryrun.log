@@ -1,0 +1,11 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'd:/Desktop/PFinalRVR/ProyectoFinalRVR'
+ 
+make: *** No rule to make target 'Socket.o', needed by 'cs'.
+
+make: *** No rule to make target 'Chat.o', needed by 'cs'.
+make: *** No rule to make target 'ChatServer.o', needed by 'cs'.
+make: *** No rule to make target 'ChatClient.o', needed by 'cc'.
+
+make: Leaving directory 'd:/Desktop/PFinalRVR/ProyectoFinalRVR'
+ 
